@@ -1,8 +1,8 @@
 .nav a{
   color:##5a5a5a;
-  font-size:11px;
+  font-size:1.1em;
   font-weight:bold;
-  padding:14px 10px;
+  padding:1.4em 1 em;
   text-transfrom:uppercase;
 }
 .nav a:hover{
