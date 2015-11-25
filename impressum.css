@@ -1,0 +1,29 @@
+.nav a{
+  color:##5a5a5a;
+  font-size:1.1em;
+  font-weight:bold;
+  padding:1.4em 1em;
+  text-transfrom:uppercase;
+}
+.nav a:hover{
+color:#000000;
+}
+
+.nav li{
+  display: inline;
+}
+
+
+.impressum{
+  margin-left:auto;
+  margin-right:auto;
+width: 16em;
+  background-color=#a5a5a5;
+  font-size:1.6em;
+  font-weight:bold;
+  padding:1.4em 1em;
+}
+
+.impressum h2{
+  text-align:center;
+}
