@@ -12,3 +12,9 @@ color:#000000;
 .nav li{
   display: inline;
 }
+
+.centered{
+  margin-left: auto;
+  margin-right:auto;
+  text-align: center;
+}
