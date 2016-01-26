@@ -14,6 +14,7 @@ if (xmlHttp) {
 
         if (xmlHttp.readyState == 4) {
           parsen=JSON.parse(xmlHttp.responseText);
+          drawChart();
         }
     };
     xmlHttp.send(null);
@@ -24,6 +25,7 @@ setInterval(loadXML(), 30000);
 
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
+
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['Fragenart', 'Anzahl der Fragen'],
