@@ -14,7 +14,9 @@ if (xmlHttp) {
 
         if (xmlHttp.readyState == 4) {
           parsen=JSON.parse(xmlHttp.responseText);
+          console.log("before draw");
           drawChart();
+
         }
     };
     xmlHttp.send(null);
@@ -88,5 +90,5 @@ function drawChart() {
 
   var chart4 = new google.visualization.PieChart(document.getElementById('donutchart4'));
   chart4.draw(data4, options4);
-
+console.log("end of draw");
 }
