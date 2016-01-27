@@ -14,7 +14,6 @@ if (xmlHttp) {
 
         if (xmlHttp.readyState == 4) {
           parsen=JSON.parse(xmlHttp.responseText);
-          console.log("before draw");
           drawChart();
 
         }
@@ -23,7 +22,7 @@ if (xmlHttp) {
 }
 }
 loadXML();
-setInterval(loadXML(), 30000);
+setInterval(loadXML, 30000);
 
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
@@ -90,5 +89,4 @@ function drawChart() {
 
   var chart4 = new google.visualization.PieChart(document.getElementById('donutchart4'));
   chart4.draw(data4, options4);
-console.log("end of draw");
 }
